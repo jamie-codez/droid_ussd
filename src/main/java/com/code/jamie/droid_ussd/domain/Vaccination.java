@@ -9,6 +9,7 @@ import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
+import java.util.List;
 
 import static javax.persistence.FetchType.EAGER;
 import static javax.persistence.GenerationType.AUTO;
@@ -28,5 +29,5 @@ public class Vaccination {
     private String owner;
     @Column(name = "vaccine_dates",nullable = false)
     @ElementCollection(targetClass = Long.class)
-    private Collection<Long> vaccineDates = new ArrayList<>();
+    private List<Long> vaccineDates = new ArrayList<>();
 }
