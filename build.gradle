@@ -16,11 +16,15 @@ configurations {
 
 repositories {
     mavenCentral()
+    maven {
+        url  "https://jitpack.io"
+    }
 }
 
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
     implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'com.github.AfricasTalkingLtd.africastalking-java:core:3.4.8'
     compileOnly 'org.projectlombok:lombok'
     developmentOnly 'org.springframework.boot:spring-boot-devtools'
     runtimeOnly 'com.mysql:mysql-connector-j'

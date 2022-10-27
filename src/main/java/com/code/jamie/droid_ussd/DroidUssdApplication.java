@@ -9,5 +9,4 @@ public class DroidUssdApplication {
     public static void main(String[] args) {
         SpringApplication.run(DroidUssdApplication.class, args);
     }
-
 }
